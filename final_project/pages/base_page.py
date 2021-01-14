@@ -69,3 +69,5 @@ class BasePage():
         return LoginPage(browser=self.browser, url=self.browser.current_url)
         alert = self.browser.switch_to.alert
         alert.accept()
+
+
