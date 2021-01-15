@@ -22,7 +22,13 @@ class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "a#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     BASKET_BUTTON = (By.CSS_SELECTOR, "span.btn-group")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 class BasketLocators():
     PRODUCT_IN_BASKET = (By.CSS_SELECTOR, "#content_inner h2")
     EMPTY_BASKET = (By.CSS_SELECTOR, "#content_inner p")
+
+class RegistrationPage():
+    EMAIL = (By.CSS_SELECTOR, "input#id_registration-email.form-control")
+    PASSWORD = (By.CSS_SELECTOR, "input#id_registration-password1.form-control")
+    CONFIRM_PASSWORD = (By.CSS_SELECTOR, "input#id_registration-password2.form-control")
